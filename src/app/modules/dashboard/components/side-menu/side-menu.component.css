@@ -1,0 +1,19 @@
+
+#sideMenu {
+    height: 100vh;
+    background-color: #343A40;
+    position: sticky;
+    margin: 0;
+    padding: 1em;
+    color: white;
+    max-width: 20%;
+}
+
+.nav-link {
+    color: white;
+    padding: 1em;
+}
+.content {
+    width: 70%;
+    max-width: 75%;
+}
