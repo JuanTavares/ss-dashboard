@@ -6,7 +6,18 @@ import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.co
 const routes: Routes = [
   {
     path: '',
-    component: DashboardPageComponent
+    component: DashboardPageComponent,
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'graphic'
+      },
+      {
+        path: 'graphic',
+        loadChildren: 'src/app/modules/graphic/graphic.module#GraphicModule'
+      }
+    ]
   }
 ];
 
