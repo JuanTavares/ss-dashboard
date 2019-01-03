@@ -14,7 +14,6 @@ export class GraphicPageComponent implements OnInit {
   ngOnInit() {
     const chart = new CanvasJS.Chart('chartContainer', {
       animationEnabled: true,
-      exportEnabled: true,
       title: {
         text: 'Novos usuários por mês'
       },
