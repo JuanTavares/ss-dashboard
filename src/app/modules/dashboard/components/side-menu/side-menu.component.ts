@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './side-menu.component.html',
   styleUrls: ['./side-menu.component.css']
 })
-export class SideMenuComponent implements OnInit {
+export class SideMenuComponent {
 
-  constructor() { }
+  isShown = false;
 
-  ngOnInit() {
+  toggle() {
+    this.isShown = !this.isShown;
   }
 
 }
