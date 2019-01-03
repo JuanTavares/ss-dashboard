@@ -1,7 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { ContentEditPageComponent } from './pages/content-edit-page/content-edit-page.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: ContentEditPageComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
