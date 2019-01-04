@@ -4,13 +4,15 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { LoginRoutingModule } from './login-routing.module';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { VmessageModule } from 'src/app/shared/components/vmessage/vmessage.module';
 
 @NgModule({
   imports: [
     CommonModule,
     LoginRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    VmessageModule
   ],
   declarations: [LoginPageComponent]
 })
