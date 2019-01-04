@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { UsersRoutingModule } from './users-routing.module';
 import { UsersPageComponent } from './pages/users-page/users-page.component';
+import { PipesModule } from 'src/app/shared/pipes/pipes.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    UsersRoutingModule
+    UsersRoutingModule,
+    PipesModule
   ],
   declarations: [UsersPageComponent]
 })
