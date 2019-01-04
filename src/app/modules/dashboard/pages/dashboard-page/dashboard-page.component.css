@@ -4,6 +4,16 @@
 app-side-menu {
     max-width: 20%;
 }
+@media (min-width: 1200px) { 
+    app-side-menu {
+        max-width: 15%;
+    }
+}
 #router {
     width: 80%;
+}
+@media (max-width: 769px) {
+    #router {
+        width: 100%;
+    }
 }

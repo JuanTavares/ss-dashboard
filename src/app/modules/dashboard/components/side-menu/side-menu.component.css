@@ -7,6 +7,12 @@
     color: white;
 }
 
+@media (max-width: 769px) {
+    #sideMenu {
+        display: none;
+    }
+}
+
 .nav-link {
     color: white;
     padding: 1em;
