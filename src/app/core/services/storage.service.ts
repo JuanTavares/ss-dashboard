@@ -10,7 +10,11 @@ export class StorageService {
   constructor() { }
 
   salvarLocal(email: string, password: string) {
-    localStorage.setItem(KEY, JSON.stringify({ email, password }));
+    window.localStorage.setItem(KEY, JSON.stringify({ email, password }));
+  }
+
+  getUser() {
+    return window.localStorage.getItem(KEY);
   }
 
 }
