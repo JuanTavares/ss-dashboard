@@ -17,7 +17,15 @@ export class ContentEditPageComponent {
   };
   modal: any;
 
-  ngOnInit() {
+  constructor(
+    private modalService: NgbModal
+    ) { }
+
+  openModal(content) {
+    this.modal = this.modalService.open(content, { centered: true });
   }
 
+  close() {
+    this.modal.close();
+  }
 }
