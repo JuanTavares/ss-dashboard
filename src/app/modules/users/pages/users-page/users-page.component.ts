@@ -26,7 +26,6 @@ export class UsersPageComponent implements OnInit {
   }
   selectUser(user) {
     this.selectedUser = user;
-    console.log(this.selectedUser);
   }
 
 }
