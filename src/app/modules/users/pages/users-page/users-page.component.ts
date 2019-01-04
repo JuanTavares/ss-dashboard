@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { RandomUserService } from 'src/app/core/services/random-user.service';
-import { Users } from 'src/app/core/models/users';
-import { Random } from 'src/app/core/models/random';
+import { Users } from 'src/app/shared/models/users';
+import { Random } from 'src/app/shared/models/random';
 
 @Component({
   selector: 'app-users-page',
