@@ -1,3 +1,16 @@
-<p>
-  side-menu works!
-</p>
+<nav #sideMenu class="sideMenu">
+  <div class="text-center mx-auto">
+    <img src="/src/assets/img/avatar-profile.png" class="rounded-circle img-thumbnail" alt="Imagem padrão">
+    <h2 class="my-1 h2">{{usuarioLogado.email}}</h2>
+  </div>
+  <hr class="bg-white">
+  <div class="text-center mx-auto">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link" data-toggle="pill" [routerLink]="['graphic']" role="tab">Gráficos</a>
+      <a class="nav-link" data-toggle="pill" [routerLink]="['users']" role="tab">Usuários</a>
+      <a class="nav-link" data-toggle="pill" [routerLink]="['content-edit']" role="tab">Editar Conteúdo</a>
+      <a class="nav-link" data-toggle="pill" [routerLink]="['interest-list']" role="tab">Lista de Interesses</a>
+    </div>
+  </div>
+  <div class="overlay" (click)="toggle()"></div>
+</nav>

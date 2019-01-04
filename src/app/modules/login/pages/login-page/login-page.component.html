@@ -9,9 +9,13 @@
       <form [formGroup]="loginForm" class="form" (submit)="login()">
         <div class="form-group">
           <input #emailInput formControlName="email" type="email" class="form-control" placeholder="Email">
+          <app-vmessage *ngIf="loginForm.get('email').errors?.required" text="Usuário inválido!">
+          </app-vmessage>
         </div>
         <div class="form-group">
           <input formControlName="password" type="password" class="form-control" placeholder="Senha">
+          <app-vmessage *ngIf="loginForm.get('password').errors?.required" text="Senha inválida!">
+          </app-vmessage>
         </div>
         <div class="row justify-content-center">
           <button [disabled]="loginForm.invalid" type="submit" class="btn btn-primary col-6">

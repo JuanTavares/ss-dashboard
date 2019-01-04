@@ -1,14 +1,18 @@
 <div class="container">
-    <h1>Home</h1>
+    <main>
+        <h1>Home</h1>
 
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-        make a type specimen book.</p>
+        <p>Este projeto é a apresentação de uma simples dashboard em Angular 6, contendo um total de 5 telas (contando com a Home) e utilizando diferentes recursos.</p>
+        <p>A tela de Login possui validação de formulário, impedindo assim que o usuário clique no botão de logar caso o formulário esteja inválido.</p>
+        <p>Após efetuar o login, o usuário é encaminhado para a Dashboard, que possui um header e uma side-bar com as opções de rotas dentro da aplicação.</p>
+        <p>A primeira tela da Dashboard é uma tela onde são exibidos alguns gráficos com dados fake usados apenas para dar o formato de cada um.</p>
+        <p>A tela de Usuários exibe uma lista de 101 usuários recebidos da API "https://randomuser.me", e cada usuário, quando clicado, exibe uma tabela de dados do lado.</p>
+        <p>A tela do Editor de Conteúdo exibe um editor semelhante ao utilizado pelo Wordpress, sendo esse gerado através da ferramenta open-source TinyMCE. <span class="text-danger">Atenção:</span> O editor em si pode ser usado apenas para escrever e testar suas capacidades, mas <span class="text-danger">não é funcional para edição de qualquer conteúdo dentro desta aplicação</span>.</p>
+        <p>A tela de Lista de Interesses exibe uma tabela que faz agrupamento de pessoas por cargo de trabalho e outra tabela que agrupa por área de interesses. Devido a limitação da API "https://randomuser.me", eu criei uma pequena API através do site "https://randomapi.com" sugerido pelos mesmos, porém essa api só pode exibir grupos de 10 usuários de cada vez e tem limite de 500 gerações aleatórias por dia.</p>
+        <p>A aplicação foi estilizada com Bootstrap e com algumas classes em css customizado.</p>
 
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-        make a type specimen book.</p>
-    <div class="row justify-content-center">
-        <button [routerLink]="['/login']" class="btn btn-primary btn-lg col-6">Iniciar</button>
-    </div>
+        <div class="row justify-content-center">
+            <button [routerLink]="['/login']" class="btn btn-primary btn-lg col-6">Iniciar</button>
+        </div>
+    </main>
 </div>

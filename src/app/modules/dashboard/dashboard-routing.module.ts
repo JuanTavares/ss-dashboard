@@ -6,7 +6,25 @@ import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.co
 const routes: Routes = [
   {
     path: '',
-    component: DashboardPageComponent
+    component: DashboardPageComponent,
+    children: [
+      {
+        path: 'graphic',
+        loadChildren: 'src/app/modules/graphic/graphic.module#GraphicModule'
+      },
+      {
+        path: 'users',
+        loadChildren: 'src/app/modules/users/users.module#UsersModule'
+      },
+      {
+        path: 'content-edit',
+        loadChildren: 'src/app/modules/content-edit/content-edit.module#ContentEditModule'
+      },
+      {
+        path: 'interest-list',
+        loadChildren: 'src/app/modules/interest-list/interest-list.module#InterestListModule'
+      }
+    ]
   }
 ];
 

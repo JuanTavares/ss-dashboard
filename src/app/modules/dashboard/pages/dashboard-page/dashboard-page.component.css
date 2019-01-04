@@ -1,0 +1,45 @@
+#rota {
+    display: flex;
+}
+app-side-menu {
+    min-width: 200px;
+    max-width: 20%;
+    transition: left 0.3s ease-out;
+}
+@media (min-width: 1200px) { 
+    app-side-menu {
+        max-width: 15%;
+    }
+}
+#router {
+    width: 80%;
+}
+@media (min-width: 770px) {
+    #navbar-toggler {
+        display: none;
+    }
+}
+@media (max-width: 769px) {
+    #router {
+        width: 100%;
+    }
+    app-side-menu {
+        position: fixed;
+        left: -250px;
+        top: 0;
+        margin-top: 56px;
+        z-index: 2;
+    }
+    .active-menu {
+        left: 0;
+    }
+    .overlay {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.4)
+    }
+}

@@ -1,0 +1,24 @@
+<div class="px-4 ml-sm-auto">
+  <div class="d-flex justify-content-between align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Editor de Conteúdo</h1>
+  </div>
+  <editor [init]="tinyMceSettings"></editor>
+  <div class="row">
+    <button class="btn btn-primary mt-5 mx-auto col-6" (click)="openModal(content)">Enviar</button>
+  </div>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Desculpa</h4>
+    <button type="button" class="close" aria-label="Close" (click)="close()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>O editor de conteúdo só está sendo exibido de forma bonita, mas não está funcional</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-light" (click)="close()">Fechar</button>
+  </div>
+</ng-template>
