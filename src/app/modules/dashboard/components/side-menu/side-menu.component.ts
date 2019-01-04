@@ -9,7 +9,6 @@ import { UsuarioLogado } from 'src/app/shared/models/usuario-logado';
 })
 export class SideMenuComponent implements OnInit {
 
-  isShown = false;
   usuarioLogado: UsuarioLogado;
 
   constructor(
@@ -19,10 +18,6 @@ export class SideMenuComponent implements OnInit {
   ngOnInit() {
     this.usuarioLogado = JSON.parse(this.storage.getUser());
     console.log(this.usuarioLogado);
-  }
-
-  toggle() {
-    this.isShown = !this.isShown;
   }
 
 }

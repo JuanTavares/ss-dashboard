@@ -1,4 +1,4 @@
-<nav #sideMenu id="sideMenu">
+<nav #sideMenu class="sideMenu">
   <div class="text-center mx-auto">
     <img src="/src/assets/img/avatar-profile.png" class="rounded-circle img-thumbnail" alt="Imagem padrão">
     <h2 class="my-1 h2">{{usuarioLogado.email}}</h2>
@@ -12,4 +12,5 @@
       <a class="nav-link" data-toggle="pill" [routerLink]="['interest-list']" role="tab">Lista de Interesses</a>
     </div>
   </div>
+  <div class="overlay" (click)="toggle()"></div>
 </nav>

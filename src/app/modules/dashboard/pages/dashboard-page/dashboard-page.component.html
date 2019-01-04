@@ -1,6 +1,12 @@
-<app-header></app-header>
+<app-header>
+    <button (click)="toggle()" id="navbar-toggler" class="navbar-toggler" type="button" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</app-header>
 <div id="rota">
-    <app-side-menu></app-side-menu>
+    <app-side-menu (click)="toggle()" [ngClass]="{'active-menu': isShown}"></app-side-menu>
+    <div (click)="toggle()" [ngClass]="{'overlay': isShown}"></div>
     <div id="router">
         <router-outlet></router-outlet>
     </div>

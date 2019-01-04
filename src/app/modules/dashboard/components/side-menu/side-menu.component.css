@@ -1,16 +1,10 @@
-#sideMenu {
+.sideMenu {
     height: 100%;
     min-height: 100vh;
     background-color: #343A40;
     margin: 0;
     padding: 1em;
     color: white;
-}
-
-@media (max-width: 769px) {
-    #sideMenu {
-        display: none;
-    }
 }
 
 .nav-link {
